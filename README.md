@@ -1,8 +1,8 @@
 # useful-js-modules
 
-A growing collection of **small, focused, ESM-first JavaScript utilities** for Node.js and Bun — the kind of modules you'd otherwise copy-paste into every project. No frameworks, no build step, no bloat: just plain JavaScript with JSDoc types.
+A growing collection of **reusable JavaScript and TypeScript utility modules** — small, focused, drop-in helpers that work in any project. No frameworks, no build step, no bloat: just readable, ESM-first code with JSDoc types that you can import as-is or vendor into your own codebase.
 
-Currently includes a **zero-dependency CLI argument parser with auto-generated help**, an **offline Bangladesh point-in-country geofence check**, and a **phone number parser/validator** powered by `libphonenumber-js`.
+This repo is a long-term home for modules across any domain: CLI tooling, validation, formatting, parsing, math, dates, geography, browser helpers, and whatever else proves useful. The modules listed below are the current contents, not the limit of what belongs here.
 
 ## Why this repo?
 
@@ -12,6 +12,8 @@ Currently includes a **zero-dependency CLI argument parser with auto-generated h
 - **Copy, don't couple** — no shared runtime, no monorepo tooling. Take the one file you need.
 
 ## Modules
+
+Everything currently in the repo. New modules land here as they're added.
 
 | Module | What it does | Dependencies |
 | --- | --- | --- |
