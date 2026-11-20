@@ -17,9 +17,11 @@ Everything currently in the repo. New modules land here as they're added.
 
 | Module | What it does | Dependencies |
 | --- | --- | --- |
-| [`args.js`](#argsjs--cli-argument-parser) | Declarative CLI argument parsing with types, aliases, required flags, and generated `--help` | None |
-| [`bd.js`](#bdjs--bangladesh-point-in-country-check) | Fast offline check for whether a `[lng, lat]` point is inside Bangladesh | None |
-| [`numCheck.js`](#numcheckjs--phone-number-identification) | Parse and validate international phone numbers, with country/type detection | `libphonenumber-js` |
+| [`args.js` / `args.ts`](#argsjs--cli-argument-parser) | Declarative CLI argument parsing with types, aliases, required flags, and generated `--help` | None |
+| [`bd.js` / `bd.ts`](#bdjs--bangladesh-point-in-country-check) | Fast offline check for whether a `[lng, lat]` point is inside Bangladesh | None |
+| [`numCheck.js` / `numCheck.ts`](#numcheckjs--phone-number-identification) | Parse and validate international phone numbers, with country/type detection | `libphonenumber-js` |
+
+Every module ships in two drop-in flavors: `*.js` (JSDoc-typed, run as-is) and `*.ts` (native TypeScript types instead of JSDoc). Both versions export the same API and behave identically — pick whichever fits your project.
 
 ## Getting started
 
@@ -290,8 +292,11 @@ Failure result:
 ```
 useful-js-modules/
 ├── args.js       # CLI argument parser (zero dependencies)
+├── args.ts       # Same parser, native TypeScript types
 ├── bd.js         # Bangladesh point-in-country check (zero dependencies)
+├── bd.ts         # Same check, native TypeScript types
 ├── numCheck.js   # Phone number identification (libphonenumber-js)
+├── numCheck.ts   # Same identification, native TypeScript types
 ├── LICENSE       # MIT
 └── README.md
 ```
